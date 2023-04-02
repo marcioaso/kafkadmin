@@ -1,0 +1,38 @@
+{
+  "name": "kafkadmin",
+  "version": "2.2.0",
+  "main": "dist-electron/main/index.js",
+  "description": "Electron Vite React boilerplate.",
+  "author": "草鞋没号 <308487730@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "electron-updater": "^5.3.0",
+    "sqlite3": "^5.1.6"
+  },
+  "devDependencies": {
+    "@previewjs/plugin-solid": "^6.2.3",
+    "electron": "^23.2.0",
+    "electron-builder": "^23.6.0",
+    "sass": "^1.60.0",
+    "solid-js": "^1.7.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.2.1",
+    "vite-plugin-electron": "^0.11.1",
+    "vite-plugin-electron-renderer": "^0.13.14",
+    "vite-plugin-solid": "^2.6.1"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  }
+}
