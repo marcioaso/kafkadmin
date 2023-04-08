@@ -8,7 +8,7 @@ const App:Component = () => {
   return (
     <div>
       <header >
-        <div>Kafkadmin</div>
+        <div>KafkAdmin</div>
         <For each={ usersList() }>
           {(item) => <div>{item.id} - {item.name}</div>}
         </For>
