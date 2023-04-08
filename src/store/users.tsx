@@ -34,6 +34,10 @@ export const find = async(user:User):Promise<User[]> => {
     return await select("profile") as User[]
 }
 
+export const findOne = async(id:number):Promise<User> => {
+    return await selectOne("profile",id) as User
+}
+
 export const remove = async (userID:number):Promise<void> => {
     await del("profile",{id:userID})
     refresh()
